@@ -175,4 +175,4 @@ if generate_video:
 
 
 st.write('ساخته شده با :heart: توسط [مارسلو](https://github.com/360macky).')
-st.write('[سورس کد پروژه](https://github.com/360macky/generative-manim) - [گزارش ایراد](https://github.com/360macky/generative-manim/issues/new) - [توییتر](https://twitter.com/360macky) - [پروفایل OpenAI](https://community.openai.com/u/360macky/summary)')
+st.write('[سورس کد پروژه](https://github.com/360macky/generative-manim) - [گزارش ایراد](https://github.com/360macky/generative-manim/issues/new) - [توییتر](https://twitter.com/360macky) - [پروفایل اوپن ای آی](https://community.openai.com/u/360macky/summary)')
