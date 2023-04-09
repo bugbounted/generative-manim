@@ -39,7 +39,7 @@ openai_model = st.selectbox(
 
 if st.checkbox("از کلید توسعه دهنده اوپن ای آی خود استفاده کنید (توصیه می شود)"):
   openai_api_key = st.text_input(
-      "خودتان را بچسبانید [کلید توسعه دهنده OpenAI](https://platform.openai.com/account/api-keys)", value="", type="password")
+      "خودتان را بچسبانید [کلید توسعه دهنده اوپن ای آی](https://platform.openai.com/account/api-keys)", value="", type="password")
 
 st.write(":warning: در حال حاضر اوپن ای آی هر سه ساعت بیست و پنج درخواست برای جیپیتی فور می پذیرد. این یعنی اوپن آی آی شروع به رد کردن برخی از درخواست ها خواهد کرد. دو راه حل وجود دارد: از جی پی تی ۳.۵  استفاده کنید یا از کلید توسعه دهنده اوپن ای آی شخصیتان استفاده کنید.")
 
