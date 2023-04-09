@@ -26,7 +26,7 @@ styl = f"""
 st.markdown(styl, unsafe_allow_html=True)
 
 st.title(":art: رندر")
-st.write(":robot_face: با GPT-4 و GPT-3.5 انیمیشن های زیبا و سریع بسازید :sparkles:")
+st.write(":robot_face: با جی پی تی ۴ و جی پی تی ۳.۵  انیمیشن های زیبا و سریع بسازید :sparkles:")
 
 prompt = st.text_area("ایده انیمیشن خود را اینجا بنویسید. از کلمات ساده استفاده کنید.",
                       "Draw a blue circle and convert it to a red square", max_chars=240,
@@ -35,13 +35,13 @@ prompt = st.text_area("ایده انیمیشن خود را اینجا بنویس
 openai_api_key = ""
 
 openai_model = st.selectbox(
-    "مدل GPT را انتخاب کنید. اگر به GPT-4 دسترسی ندارید، GPT-3.5-Turbo را انتخاب کنید", ["GPT-3.5-Turbo", "GPT-4"])
+    "مدل جی پی تی را انتخاب کنید. اگر به جی پی تی ۴  دسترسی ندارید، جی پی تی ۳.۵  را انتخاب کنید", ["GPT-3.5-Turbo", "GPT-4"])
 
-if st.checkbox("از کلید Open API خود استفاده کنید (توصیه می شود)"):
+if st.checkbox("از کلید توسعه دهنده اوپن ای آی خود استفاده کنید (توصیه می شود)"):
   openai_api_key = st.text_input(
       "خودتان را بچسبانید [کلید توسعه دهنده OpenAI](https://platform.openai.com/account/api-keys)", value="", type="password")
 
-st.write(":warning: در حال حاضر OpenAI هر 3 ساعت 25 درخواست برای GPT-4 می پذیرد. این بدان معنی است که OpenAI شروع به رد برخی از درخواست ها می کند. دو راه حل وجود دارد: از GPT-3.5-Turbo استفاده کنید یا از کلید OpenAI API خود استفاده کنید.")
+st.write(":warning: در حال حاضر اوپن ای آی هر سه ساعت بیست و پنج درخواست برای جیپیتی فور می پذیرد. این یعنی اوپن آی آی شروع به رد کردن برخی از درخواست ها خواهد کرد. دو راه حل وجود دارد: از جی پی تی ۳.۵  استفاده کنید یا از کلید توسعه دهنده اوپن ای آی شخصیتان استفاده کنید.")
 
 generate_video = st.button(":computer: متحرک کردن :sparkles:", type="primary")
 show_code = st.checkbox("نمایش کد تولید شده (که انیمیشن را تولید می کند)")
@@ -91,7 +91,7 @@ if generate_video:
       else:
         openai_api_key = st.secrets["OPENAI_API_KEY"]
     except:
-      st.error("Error: متأسفم، کلید OpenAI API خود را غیرفعال کردم (بودجه به پایان رسیده است). لطفاً از کلید API خود استفاده کنید و کاملاً کار خواهد کرد. در غیر این صورت، لطفاً برای من در توییتر پیام ارسال کنید (@360macky)")
+      st.error("Error: متأسفم، کلید توسعه دهنده اوپن ای آی خود را غیرفعال کردم (بودجه به پایان رسیده است). لطفاً از کلید کلید توسعه دهنده خود استفاده کنید و کاملاً کار خواهد کرد. در غیر این صورت، لطفاً برای من در توییتر پیام ارسال کنید (@360macky)")
       st.stop()
   else:
     try:
