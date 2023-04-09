@@ -167,7 +167,7 @@ if generate_video:
           "Error: هنگام نمایش ویدیوی شما مشکلی پیش آمد. لطفا صفحه را دوباره بارگذاری کنید.")
   try:
     python_file = open(os.path.dirname(__file__) + '/../GenScene.py', 'rb')
-    st.download_button("Download scene in Python",
+    st.download_button("کد صحنه را در پایتون دانلود کنید",
                        python_file, "GenScene.py", "text/plain")
   except:
     st.error(
