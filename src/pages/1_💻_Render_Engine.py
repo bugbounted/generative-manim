@@ -20,9 +20,9 @@ styl = f"""
 """
 st.markdown(styl, unsafe_allow_html=True)
 
-st.title('💻 Render Engine')
+st.title('💻 موتور رندر')
 
-st.write("Quick engine to render Manim code. Paste your code, and click generate. That's it!")
+st.write("موتور سریع برای ارائه کد رندر. کد خود را بچسبانید و روی رندر ویدیو کلیک کنید. خودشه!")
 
 code_example = """circle = Circle(color=BLUE)
 self.play(Create(circle))
@@ -42,7 +42,7 @@ code_response = st.text_area(label="Code generated: ",
                              key="code_input")
 
 generates_code = st.button(
-    ":computer: Render video :sparkles:", type="primary")
+    ":computer: رندر ویدیو :sparkles:", type="primary")
 
 def get_binary_file_downloader_html(bin_file, file_label='File'):
   with open(bin_file, 'rb') as f:
